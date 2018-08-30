@@ -86,7 +86,7 @@ def read_traffic(traffic:requests.models.Response=None, repo:str='repo_name')->l
    for key in traffic['views']: 
       timestamp=datetime.datetime.strptime(key['timestamp'], '%Y-%m-%dT%H:%M:%SZ')
       data.append({'timestamp' : str(timestamp), 
-                   'key'       : str(uuid.uuid1()),
+                   'key'       : str(uuid.uuid4()),
                    'asset'     : 'github/%s/traffic' % repo, 
                    'readings'  : {'traffic' : key['uniques']}
                  })
@@ -121,7 +121,7 @@ def read_commits(commits:requests.models.Response=None, repo:str='repo_name')->l
    data=[]
    for timestamp in timestamps: 
       data.append({'timestamp' : str(timestamp),
-                   'key'       : str(uuid.uuid1()),
+                   'key'       : str(uuid.uuid4()),
                    'asset'     : 'github/%s/commits' % repo, 
                    'readings'  : {'commits' : timestamps[timestamp]}
                  })
@@ -145,7 +145,7 @@ def read_clones(clones:requests.models.Response=None, repo:str='repo_name')->lis
    data=[]
    for key in clones['clones']:
       data.append({'timestamp' : str(key['timestamp']),
-                   'key'       : str(uuid.uuid1()),
+                   'key'       : str(uuid.uuid4()),
                    'asset'     : 'github/%s/clones' % repo,
                    'readings'  : {'clones' : key['uniques']}
                  })
@@ -168,7 +168,7 @@ def read_referrers(referrers:requests.models.Response=None, repo:str='repo_name'
    # {'count': 79, 'uniques': 19, 'referrer': 'Google'}
    for obj in referrers: 
       data.append({'timestamp': str(timestamp),
-             'key': str(uuid.uuid1()),
+             'key': str(uuid.uuid4()),
              'asset': 'github/%s/referrerals/%s' % (repo, obj['referrer']), 
              'readings': {'count': obj['uniques'], # unique 
                           'total': obj['count'] 
