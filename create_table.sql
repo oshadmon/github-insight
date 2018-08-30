@@ -1,30 +1,35 @@
-CREATE TABLE GitHub_Traffic(
-   `key`           VARCHAR(255) NOT NULL DEFAULT '',
-   `timestamp`     TIMESTAMP    NOT NULL DEFAULT '0000-00-00 00:00:00', 
-   `repo`          VARCHAR(255) NOT NULL DEFAULT 'new repo', 
-   `traffic`       INT          NOT NULL DEFAULT 0, 
-   `total traffic` INT          NOT NULL DEFAULT 0, 
-   PRIMARY KEY `key_pk` (`key`)
+CREATE TABLE github_traffic(
+   row_id    VARCHAR(255) NOT NULL DEFAULT 'c8e968cd-fb59-4d65-8f65-d88d9bf7b03c', 
+   timestamp DATE         NOT NULL DEFAULT '2000-01-01',
+   traffic   INT          NOT NULL DEFAULT 0, 
+   total     INT          NOT NULL DEFAULT 0, -- value is calculated as SUM(traffic)
+   PRIMARY KEY (row_id) -- This is "legal" only because column is really of UUID type
 ); 
 
-CREATE TABLE GitHub_Commits(
-   `key`           VARCHAR(255) NOT NULL DEFAULT '',
-   `timestamp`     TIMESTAMP    NOT NULL DEFAULT '0000-00-00 00:00:00', 
-   `repo`          VARCHAR(255) NOT NULL DEFAULT 'new repo',
-   `user_name`     VARCHAR(255) NOT NULL DEFAULT 'all users',
-   `commits`       INT          NOT NULL DEFAULT 0, 
-   `total commits` INT          NOT NULL DEFAULT 0,
-   PRIMARY KEY `key_pk`(`key`)
+CREATE TABLE github_commits(
+   row_id VARCHAR(255) NOT NULL DEFAULT 'c8e968cd-fb59-4d65-8f65-d88d9bf7b03c',   
+   timestamp DATE         NOT NULL DEFAULT '2000-01-01',
+   commits   INT          NOT NULL DEFAULT 0,   
+   total     INT          NOT NULL DEFAULT 0, -- value is calculated as SUM(commits)
+   PRIMARY KEY (row_id) -- This is "legal" only because column is really of UUID type
+);
+
+CREATE TABLE github_clones(
+   row_id    VARCHAR(255) NOT NULL DEFAULT 'c8e968cd-fb59-4d65-8f65-d88d9bf7b03c',   
+   timestamp DATE         NOT NULL DEFAULT '2000-01-01',
+   clones    INT          NOT NULL DEFAULT 0,   
+   total     INT          NOT NULL DEFAULT 0, -- value is calculated as SUM(clones)
+   PRIMARY KEY (row_id) -- This is "legal" only because column is really of UUID type
 ); 
 
-CREATE TABLE GitHub_Clones(
-   `key`           VARCHAR(255) NOT NULL DEFAULT '',
-   `timestamp`     TIMESTAMP    NOT NULL DEFAULT '0000-00-00 00:00:00', 
-   `repo`          VARCHAR(255) NOT NULL DEFAULT 'new repo',
-   `clones`        INT          NOT NULL DEFAULT 0, 
-   `total clones`  INT          NOT NULL DEFAULT 0, 
-   PRIMARY KEY `key_pk`(`key`)
-); 
+CREATE TABLE github_referrals(
+   row_id    VARCHAR(255) NOT NULL DEFAULT 'c8e968cd-fb59-4d65-8f65-d88d9bf7b03c',
+   timestamp DATE         NOT NULL DEFAULT '2000-01-01',
+   referral  VARCHAR(255) NOT NULL DEFAULT 'github.com',
+   today     INT          NOT NULL DEFAULT 0, 
+   total     INT          NOT NULL DEFAULT 0,
+   PRIMARY KEY (row_id) -- This is "legal" only because column is really of UUID type
+);
 
 
-   
+
