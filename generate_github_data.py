@@ -4,8 +4,8 @@ Name: Ori Shadmon
 Date: August 2018 
 Description: The following code takes GitHub connection info, and generates traffic, commits, clones and referrals insigh. 
              The result is then saved into a JSON file.  
-"""
-import aiohttp
+Notes: This process is based on code written by @nchah (https://github.com/nchah/github-traffic-stats)
+""" 
 import argparse
 import datetime
 import json
