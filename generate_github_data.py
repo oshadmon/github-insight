@@ -170,9 +170,7 @@ def read_referrers(referrers:requests.models.Response=None, repo:str='repo_name'
       data.append({'timestamp': str(timestamp),
              'key': str(uuid.uuid4()),
              'asset': 'github/%s/referrerals/%s' % (repo, obj['referrer']), 
-             'readings': {'count': obj['uniques'], # unique 
-                          'total': obj['count'] 
-                         }
+             'readings': {'count': obj['uniques'] }
            })
    return data
 
@@ -211,7 +209,6 @@ def main():
     auth=(str(output[0].split(':')[0]), str(output[0].split(':')[-1]))
     repo=output[1]
     org=output[2]
-    json_dir=output[3]
 
     # Generate data 
     timestamp_que=queue.Queue()
@@ -235,7 +232,7 @@ def main():
     clones=clones_que.get()
     referrers=referrers_que.get() 
 
-    file_name=args.dir+'/%s_%s_data.json' % (timestamp.replace(' ','_').replace(':', '_'), repo)
+    file_name=args.dir+'/%s_%s_data.json' % (datetime.datetime.now().strftime('%Y_%m_%d'), repo)
     write_to_file(file_name, read_traffic(traffic, repo))
     write_to_file(file_name, read_commits(commits,repo))
     write_to_file(file_name, read_clones(clones, repo)) 
