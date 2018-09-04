@@ -1,0 +1,38 @@
+{"asset": "github/FogLAMP/traffic", "key": "392eba76-ca5f-47d6-b566-2f5f092fa25c", "readings": {"count": 17}, "timestamp": "2018-08-22 00:00:00"}
+{"asset": "github/FogLAMP/traffic", "key": "80104475-3739-4e54-b6ef-8c6aa7c9f420", "readings": {"count": 19}, "timestamp": "2018-08-23 00:00:00"}
+{"asset": "github/FogLAMP/traffic", "key": "213fc62c-9b69-4fa6-81b6-4412f65e7394", "readings": {"count": 19}, "timestamp": "2018-08-24 00:00:00"}
+{"asset": "github/FogLAMP/traffic", "key": "a035597c-3ef9-4d34-a577-abf6f76ccf90", "readings": {"count": 6}, "timestamp": "2018-08-25 00:00:00"}
+{"asset": "github/FogLAMP/traffic", "key": "90534061-303f-41de-bb96-20649edc3fcb", "readings": {"count": 2}, "timestamp": "2018-08-26 00:00:00"}
+{"asset": "github/FogLAMP/traffic", "key": "a4196f57-43de-4371-b70a-365ca92d9d38", "readings": {"count": 15}, "timestamp": "2018-08-27 00:00:00"}
+{"asset": "github/FogLAMP/traffic", "key": "5b453586-66f6-4e23-b12b-69ed3de94e31", "readings": {"count": 20}, "timestamp": "2018-08-28 00:00:00"}
+{"asset": "github/FogLAMP/traffic", "key": "d74a1c2f-3a56-4b84-9a49-2ff88755a179", "readings": {"count": 19}, "timestamp": "2018-08-29 00:00:00"}
+{"asset": "github/FogLAMP/traffic", "key": "eb416a25-d7c2-49c2-b748-071b48ebfd4a", "readings": {"count": 16}, "timestamp": "2018-08-30 00:00:00"}
+{"asset": "github/FogLAMP/traffic", "key": "85cfc457-7b87-4e4f-a930-53e1714acc5e", "readings": {"count": 13}, "timestamp": "2018-08-31 00:00:00"}
+{"asset": "github/FogLAMP/traffic", "key": "cc71e099-01db-4dbf-9053-1479eb4c26ca", "readings": {"count": 6}, "timestamp": "2018-09-01 00:00:00"}
+{"asset": "github/FogLAMP/traffic", "key": "39114461-c8e9-4732-a5ad-74ab61051f77", "readings": {"count": 9}, "timestamp": "2018-09-02 00:00:00"}
+{"asset": "github/FogLAMP/traffic", "key": "a8e3a8dc-8989-46c4-9fc3-edd7840eb5ea", "readings": {"count": 20}, "timestamp": "2018-09-03 00:00:00"}
+{"asset": "github/FogLAMP/traffic", "key": "06312326-7adb-45e4-9b9e-1c153016fe2a", "readings": {"count": 24}, "timestamp": "2018-09-04 00:00:00"}
+{"asset": "github/FogLAMP/commits", "key": "9f7d5fbc-3544-4a66-a4e9-d3f9b6190598", "readings": {"count": 14}, "timestamp": "2018-09-03"}
+{"asset": "github/FogLAMP/commits", "key": "53ebdd8e-29c3-429f-ad81-1e49bdf66e11", "readings": {"count": 16}, "timestamp": "2018-09-04"}
+{"asset": "github/FogLAMP/clones", "key": "6120fe46-6487-4bf3-b1ec-447344819eaa", "readings": {"count": 8}, "timestamp": "2018-08-22T00:00:00Z"}
+{"asset": "github/FogLAMP/clones", "key": "f0aa3670-aa1d-421f-b5c8-6df13d92991d", "readings": {"count": 10}, "timestamp": "2018-08-23T00:00:00Z"}
+{"asset": "github/FogLAMP/clones", "key": "21455272-c681-496b-a616-783747dc2c6b", "readings": {"count": 9}, "timestamp": "2018-08-24T00:00:00Z"}
+{"asset": "github/FogLAMP/clones", "key": "43e347da-534d-4a1e-a8f7-349bf3283ae6", "readings": {"count": 5}, "timestamp": "2018-08-25T00:00:00Z"}
+{"asset": "github/FogLAMP/clones", "key": "7dcfced9-ed2c-4637-88fb-4e06ce7ad1aa", "readings": {"count": 5}, "timestamp": "2018-08-26T00:00:00Z"}
+{"asset": "github/FogLAMP/clones", "key": "3e6d6ba0-9c6b-4462-bf65-ef858f28d96f", "readings": {"count": 10}, "timestamp": "2018-08-27T00:00:00Z"}
+{"asset": "github/FogLAMP/clones", "key": "62450a28-311b-4c06-9127-afc9f1a6310c", "readings": {"count": 6}, "timestamp": "2018-08-28T00:00:00Z"}
+{"asset": "github/FogLAMP/clones", "key": "2cd0a5d9-17d1-4fa2-ad67-e1ae2e6a0cfd", "readings": {"count": 7}, "timestamp": "2018-08-29T00:00:00Z"}
+{"asset": "github/FogLAMP/clones", "key": "6d939d35-ee8d-47c3-a673-0d7df1e367c0", "readings": {"count": 6}, "timestamp": "2018-08-30T00:00:00Z"}
+{"asset": "github/FogLAMP/clones", "key": "73c1b812-120d-4de4-8c0a-023951ed9b7f", "readings": {"count": 5}, "timestamp": "2018-08-31T00:00:00Z"}
+{"asset": "github/FogLAMP/clones", "key": "0494dd6c-ade7-4a2c-9a2e-32d38d16d1d3", "readings": {"count": 5}, "timestamp": "2018-09-01T00:00:00Z"}
+{"asset": "github/FogLAMP/clones", "key": "e5c67e6c-8ef4-44f9-a334-118d3faaad5a", "readings": {"count": 4}, "timestamp": "2018-09-02T00:00:00Z"}
+{"asset": "github/FogLAMP/clones", "key": "b70b96d6-1ee8-4310-88d0-22f8928d0e07", "readings": {"count": 6}, "timestamp": "2018-09-03T00:00:00Z"}
+{"asset": "github/FogLAMP/clones", "key": "6880b415-3dcf-449b-9479-b7c54e8eda61", "readings": {"count": 7}, "timestamp": "2018-09-04T00:00:00Z"}
+{"asset": "github/FogLAMP/referrerals/github.com", "key": "90d1d177-3555-4cd3-956f-10da28bf57ca", "readings": {"count": 30}, "timestamp": "2018-09-04"}
+{"asset": "github/FogLAMP/referrerals/Google", "key": "facb87d0-4a71-4b88-bff7-d259c4368b00", "readings": {"count": 19}, "timestamp": "2018-09-04"}
+{"asset": "github/FogLAMP/referrerals/foglamp.readthedocs.io", "key": "f16922d8-0859-4281-b20a-af4f7b6c9c8b", "readings": {"count": 5}, "timestamp": "2018-09-04"}
+{"asset": "github/FogLAMP/referrerals/scaledb.atlassian.net", "key": "cf4310b4-9814-4666-8ebf-e3085ca15288", "readings": {"count": 5}, "timestamp": "2018-09-04"}
+{"asset": "github/FogLAMP/referrerals/dianomic.com", "key": "d98f8e79-9337-4b74-9912-a8d4b5a78219", "readings": {"count": 7}, "timestamp": "2018-09-04"}
+{"asset": "github/FogLAMP/referrerals/DuckDuckGo", "key": "6aa06cb9-ded2-4aa5-ae93-3acf512b6cc0", "readings": {"count": 1}, "timestamp": "2018-09-04"}
+{"asset": "github/FogLAMP/referrerals/Bing", "key": "3fb4734e-877f-46ea-b1ba-904893ec3c25", "readings": {"count": 1}, "timestamp": "2018-09-04"}
+{"asset": "github/FogLAMP/referrerals/app.gotomeeting.com", "key": "10c59897-9f8c-469e-a51a-e2b0ee379767", "readings": {"count": 1}, "timestamp": "2018-09-04"}
