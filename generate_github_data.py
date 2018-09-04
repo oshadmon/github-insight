@@ -88,7 +88,7 @@ def read_traffic(traffic:requests.models.Response=None, repo:str='repo_name')->l
       data.append({'timestamp' : str(timestamp), 
                    'key'       : str(uuid.uuid4()),
                    'asset'     : 'github/%s/traffic' % repo, 
-                   'readings'  : {'traffic' : key['uniques']}
+                   'readings'  : {'count' : key['uniques']}
                  })
    return data
 
@@ -123,7 +123,7 @@ def read_commits(commits:requests.models.Response=None, repo:str='repo_name')->l
       data.append({'timestamp' : str(timestamp),
                    'key'       : str(uuid.uuid4()),
                    'asset'     : 'github/%s/commits' % repo, 
-                   'readings'  : {'commits' : timestamps[timestamp]}
+                   'readings'  : {'count' : timestamps[timestamp]}
                  })
    return data 
 
@@ -147,7 +147,7 @@ def read_clones(clones:requests.models.Response=None, repo:str='repo_name')->lis
       data.append({'timestamp' : str(key['timestamp']),
                    'key'       : str(uuid.uuid4()),
                    'asset'     : 'github/%s/clones' % repo,
-                   'readings'  : {'clones' : key['uniques']}
+                   'readings'  : {'count' : key['uniques']}
                  })
    return data 
 
@@ -233,6 +233,7 @@ def main():
     referrers=referrers_que.get() 
 
     file_name=args.dir+'/%s_%s_data.json' % (datetime.datetime.now().strftime('%Y_%m_%d'), repo)
+    open(file_name, 'w').close()
     write_to_file(file_name, read_traffic(traffic, repo))
     write_to_file(file_name, read_commits(commits,repo))
     write_to_file(file_name, read_clones(clones, repo)) 

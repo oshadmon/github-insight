@@ -135,6 +135,41 @@ class SendData:
             self.cur.execute(updt_stmt % (repo, timestamp, repo, timestamp))
             self.cur.execute('commit;') 
 
+   def non_referrals_insert(self, insert:str='github'): 
+      """
+      Execute insert stmt
+      :param:
+         insert:str - Into what table to insert the data
+      :args:
+         objs;dict - object containing options to insert data into
+      """
+      inst_stmt="INSERT INTO %s(row_id, timestamp, repo, today) VALUES ('%s', DATE('%s'), '%s', %s);"
+      updt_stmt="UPDATE %s SET total=(SELECT SUM(today) FROM %s WHERE repo='%s' AND timestamp<='%s') WHERE repo='%s' AND timestamp='%s'"
+      objs={
+         'traffic':{
+            'table_name': 'github_traffic',
+            'data': self.data['traffic']
+         },
+         'clones':{
+            'table_name': 'github_traffic',
+            'data': self.data['clones']
+         },
+         'commits':{
+            'table_name': 'github_commits',
+            'data': self.data['commits']
+         }
+      }
+      for obj in objs[insert]['data']:
+         row_id=obj['key']
+         timestamp=obj['timestamp']
+         repo=obj['asset'].split('/')[1]
+         count=obj['readings']['count']
+         if self.check_row(objs[insert]['table_name'], timestamp, repo) == 0:
+            self.cur.execute(inst_stmt % (objs[insert]['table_name'], row_id, timestamp, repo, count))
+            self.cur.execute('commit;')
+            self.cur.execute(updt_stmt % (objs[insert]['table_name'], objs[insert]['table_name'], repo, timestamp, repo, timestamp)) 
+            self.cur.execute('commit;') 
+
    def insert_referrals(self):
       """
       insert into github_referrals2
@@ -149,7 +184,6 @@ class SendData:
          repo=obj['asset'].split('/')[1]
          referral=obj['asset'].split('/')[-1]
          today=obj['readings']['count']
-
          if self.check_row('github_referrals2', timestamp, repo, referral) == 0: 
             self.cur.execute(inst_stmt % (row_id, timestamp, repo, referral, today))
             self.cur.execute('commit;')
@@ -180,9 +214,12 @@ def main():
    sd=SendData(args.file_name, args.hp, args.up, args.db) 
    if args.create is not None: 
       sd.create_tables(args.create) 
-   sd.insert_traffic() 
-   sd.insert_clones() 
-   sd.insert_commits() 
+   sd.non_referrals_insert('traffic')
+   sd.non_referrals_insert('clones')
+   sd.non_referrals_insert('commits')
+   #sd.insert_traffic() 
+   #sd.insert_clones() 
+   #sd.insert_commits() 
    sd.insert_referrals() 
 
 if __name__ == '__main__': 
