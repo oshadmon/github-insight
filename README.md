@@ -23,11 +23,14 @@ optional arguments:
   -d DIR, --dir DIR  directory to send data into (for JSON)
 
 ubuntu@ori-foglamp:~/github-insight$ python3 generate_github_data.py $HOME/auth_pair.txt -d /tmp
-ubuntu@ori-foglamp:~/github-insight$ cat /tmp/2018_09_04_11_14_58_FogLAMP_data.json 
-{"key": "c4cf0fff-6e8a-44c4-bca7-3987d7fabf78", "readings": {"traffic": 7}, "asset": "github/FogLAMP/traffic", "timestamp": "2018-08-21 00:00:00"}
-{"key": "ab7c1497-a79c-4782-a5ce-baee08f530f1", "readings": {"commits": 16}, "asset": "github/FogLAMP/commits", "timestamp": "2018-09-04"}
-{"key": "eae6cde8-8f02-49ec-87c0-310cab35b7d7", "readings": {"clones": 8}, "asset": "github/FogLAMP/clones", "timestamp": "2018-08-22T00:00:00Z"}
-{"key": "61363499-5efa-4bf2-94f2-3c2c23f55259", "readings": {"count": 30}, "asset": "github/FogLAMP/referrerals/github.com", "timestamp": "2018-09-04"}
+ubuntu@ori-foglamp:~/github-insight$ cat sample.json 
+{"asset": "github/FogLAMP/traffic", "key": "06312326-7adb-45e4-9b9e-1c153016fe2a", "readings": {"count": 24}, "timestamp": "2018-09-04 00:00:00"}
+{"asset": "github/FogLAMP/commits", "key": "53ebdd8e-29c3-429f-ad81-1e49bdf66e11", "readings": {"count": 16}, "timestamp": "2018-09-04"}
+{"asset": "github/FogLAMP/clones", "key": "6880b415-3dcf-449b-9479-b7c54e8eda61", "readings": {"count": 7}, "timestamp": "2018-09-04T00:00:00Z"}
+{"asset": "github/FogLAMP/referrerals/github.com", "key": "90d1d177-3555-4cd3-956f-10da28bf57ca", "readings": {"count": 30}, "timestamp": "2018-09-04"}
+{"asset": "github/FogLAMP/referrerals/Google", "key": "facb87d0-4a71-4b88-bff7-d259c4368b00", "readings": {"count": 19}, "timestamp": "2018-09-04"}
+{"asset": "github/FogLAMP/referrerals/foglamp.readthedocs.io", "key": "f16922d8-0859-4281-b20a-af4f7b6c9c8b", "readings": {"count": 5}, "timestamp": "2018-09-04"}
+{"asset": "github/FogLAMP/referrerals/scaledb.atlassian.net", "key": "cf4310b4-9814-4666-8ebf-e3085ca15288", "readings": {"count": 5}, "timestamp": "2018-09-04"}
 ...
 ```
 
