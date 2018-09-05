@@ -1,4 +1,4 @@
-#!/bin/user/python
+
 """
 Name: Ori Shadmon
 Date: August 2018 

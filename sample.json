@@ -1,38 +1,35 @@
-{"asset": "github/FogLAMP/traffic", "key": "392eba76-ca5f-47d6-b566-2f5f092fa25c", "readings": {"count": 17}, "timestamp": "2018-08-22 00:00:00"}
-{"asset": "github/FogLAMP/traffic", "key": "80104475-3739-4e54-b6ef-8c6aa7c9f420", "readings": {"count": 19}, "timestamp": "2018-08-23 00:00:00"}
-{"asset": "github/FogLAMP/traffic", "key": "213fc62c-9b69-4fa6-81b6-4412f65e7394", "readings": {"count": 19}, "timestamp": "2018-08-24 00:00:00"}
-{"asset": "github/FogLAMP/traffic", "key": "a035597c-3ef9-4d34-a577-abf6f76ccf90", "readings": {"count": 6}, "timestamp": "2018-08-25 00:00:00"}
-{"asset": "github/FogLAMP/traffic", "key": "90534061-303f-41de-bb96-20649edc3fcb", "readings": {"count": 2}, "timestamp": "2018-08-26 00:00:00"}
-{"asset": "github/FogLAMP/traffic", "key": "a4196f57-43de-4371-b70a-365ca92d9d38", "readings": {"count": 15}, "timestamp": "2018-08-27 00:00:00"}
-{"asset": "github/FogLAMP/traffic", "key": "5b453586-66f6-4e23-b12b-69ed3de94e31", "readings": {"count": 20}, "timestamp": "2018-08-28 00:00:00"}
-{"asset": "github/FogLAMP/traffic", "key": "d74a1c2f-3a56-4b84-9a49-2ff88755a179", "readings": {"count": 19}, "timestamp": "2018-08-29 00:00:00"}
-{"asset": "github/FogLAMP/traffic", "key": "eb416a25-d7c2-49c2-b748-071b48ebfd4a", "readings": {"count": 16}, "timestamp": "2018-08-30 00:00:00"}
-{"asset": "github/FogLAMP/traffic", "key": "85cfc457-7b87-4e4f-a930-53e1714acc5e", "readings": {"count": 13}, "timestamp": "2018-08-31 00:00:00"}
-{"asset": "github/FogLAMP/traffic", "key": "cc71e099-01db-4dbf-9053-1479eb4c26ca", "readings": {"count": 6}, "timestamp": "2018-09-01 00:00:00"}
-{"asset": "github/FogLAMP/traffic", "key": "39114461-c8e9-4732-a5ad-74ab61051f77", "readings": {"count": 9}, "timestamp": "2018-09-02 00:00:00"}
-{"asset": "github/FogLAMP/traffic", "key": "a8e3a8dc-8989-46c4-9fc3-edd7840eb5ea", "readings": {"count": 20}, "timestamp": "2018-09-03 00:00:00"}
-{"asset": "github/FogLAMP/traffic", "key": "06312326-7adb-45e4-9b9e-1c153016fe2a", "readings": {"count": 24}, "timestamp": "2018-09-04 00:00:00"}
-{"asset": "github/FogLAMP/commits", "key": "9f7d5fbc-3544-4a66-a4e9-d3f9b6190598", "readings": {"count": 14}, "timestamp": "2018-09-03"}
-{"asset": "github/FogLAMP/commits", "key": "53ebdd8e-29c3-429f-ad81-1e49bdf66e11", "readings": {"count": 16}, "timestamp": "2018-09-04"}
-{"asset": "github/FogLAMP/clones", "key": "6120fe46-6487-4bf3-b1ec-447344819eaa", "readings": {"count": 8}, "timestamp": "2018-08-22T00:00:00Z"}
-{"asset": "github/FogLAMP/clones", "key": "f0aa3670-aa1d-421f-b5c8-6df13d92991d", "readings": {"count": 10}, "timestamp": "2018-08-23T00:00:00Z"}
-{"asset": "github/FogLAMP/clones", "key": "21455272-c681-496b-a616-783747dc2c6b", "readings": {"count": 9}, "timestamp": "2018-08-24T00:00:00Z"}
-{"asset": "github/FogLAMP/clones", "key": "43e347da-534d-4a1e-a8f7-349bf3283ae6", "readings": {"count": 5}, "timestamp": "2018-08-25T00:00:00Z"}
-{"asset": "github/FogLAMP/clones", "key": "7dcfced9-ed2c-4637-88fb-4e06ce7ad1aa", "readings": {"count": 5}, "timestamp": "2018-08-26T00:00:00Z"}
-{"asset": "github/FogLAMP/clones", "key": "3e6d6ba0-9c6b-4462-bf65-ef858f28d96f", "readings": {"count": 10}, "timestamp": "2018-08-27T00:00:00Z"}
-{"asset": "github/FogLAMP/clones", "key": "62450a28-311b-4c06-9127-afc9f1a6310c", "readings": {"count": 6}, "timestamp": "2018-08-28T00:00:00Z"}
-{"asset": "github/FogLAMP/clones", "key": "2cd0a5d9-17d1-4fa2-ad67-e1ae2e6a0cfd", "readings": {"count": 7}, "timestamp": "2018-08-29T00:00:00Z"}
-{"asset": "github/FogLAMP/clones", "key": "6d939d35-ee8d-47c3-a673-0d7df1e367c0", "readings": {"count": 6}, "timestamp": "2018-08-30T00:00:00Z"}
-{"asset": "github/FogLAMP/clones", "key": "73c1b812-120d-4de4-8c0a-023951ed9b7f", "readings": {"count": 5}, "timestamp": "2018-08-31T00:00:00Z"}
-{"asset": "github/FogLAMP/clones", "key": "0494dd6c-ade7-4a2c-9a2e-32d38d16d1d3", "readings": {"count": 5}, "timestamp": "2018-09-01T00:00:00Z"}
-{"asset": "github/FogLAMP/clones", "key": "e5c67e6c-8ef4-44f9-a334-118d3faaad5a", "readings": {"count": 4}, "timestamp": "2018-09-02T00:00:00Z"}
-{"asset": "github/FogLAMP/clones", "key": "b70b96d6-1ee8-4310-88d0-22f8928d0e07", "readings": {"count": 6}, "timestamp": "2018-09-03T00:00:00Z"}
-{"asset": "github/FogLAMP/clones", "key": "6880b415-3dcf-449b-9479-b7c54e8eda61", "readings": {"count": 7}, "timestamp": "2018-09-04T00:00:00Z"}
-{"asset": "github/FogLAMP/referrerals/github.com", "key": "90d1d177-3555-4cd3-956f-10da28bf57ca", "readings": {"count": 30}, "timestamp": "2018-09-04"}
-{"asset": "github/FogLAMP/referrerals/Google", "key": "facb87d0-4a71-4b88-bff7-d259c4368b00", "readings": {"count": 19}, "timestamp": "2018-09-04"}
-{"asset": "github/FogLAMP/referrerals/foglamp.readthedocs.io", "key": "f16922d8-0859-4281-b20a-af4f7b6c9c8b", "readings": {"count": 5}, "timestamp": "2018-09-04"}
-{"asset": "github/FogLAMP/referrerals/scaledb.atlassian.net", "key": "cf4310b4-9814-4666-8ebf-e3085ca15288", "readings": {"count": 5}, "timestamp": "2018-09-04"}
-{"asset": "github/FogLAMP/referrerals/dianomic.com", "key": "d98f8e79-9337-4b74-9912-a8d4b5a78219", "readings": {"count": 7}, "timestamp": "2018-09-04"}
-{"asset": "github/FogLAMP/referrerals/DuckDuckGo", "key": "6aa06cb9-ded2-4aa5-ae93-3acf512b6cc0", "readings": {"count": 1}, "timestamp": "2018-09-04"}
-{"asset": "github/FogLAMP/referrerals/Bing", "key": "3fb4734e-877f-46ea-b1ba-904893ec3c25", "readings": {"count": 1}, "timestamp": "2018-09-04"}
-{"asset": "github/FogLAMP/referrerals/app.gotomeeting.com", "key": "10c59897-9f8c-469e-a51a-e2b0ee379767", "readings": {"count": 1}, "timestamp": "2018-09-04"}
+{"timestamp": "2018-08-22 00:00:00", "key": "8bf21ada-e7b2-43f5-bb93-7e420274f98d", "asset": "github/github-insight/traffic", "readings": {"count": 8}}
+{"timestamp": "2018-08-23 00:00:00", "key": "0b2f5a1e-b69a-4b5d-91f4-b0ee51405121", "asset": "github/github-insight/traffic", "readings": {"count": 19}}
+{"timestamp": "2018-08-24 00:00:00", "key": "45da262e-89c7-43d7-bfb8-f22f364153b4", "asset": "github/github-insight/traffic", "readings": {"count": 19}}
+{"timestamp": "2018-08-25 00:00:00", "key": "fe312934-7058-4c53-8331-918940f78d0a", "asset": "github/github-insight/traffic", "readings": {"count": 6}}
+{"timestamp": "2018-08-26 00:00:00", "key": "eae1e28c-99ad-47aa-9b8b-109fce6cca0a", "asset": "github/github-insight/traffic", "readings": {"count": 2}}
+{"timestamp": "2018-08-27 00:00:00", "key": "fd7b0f65-cdf0-4184-a764-dbb29e9a5f80", "asset": "github/github-insight/traffic", "readings": {"count": 15}}
+{"timestamp": "2018-08-28 00:00:00", "key": "6513009b-578f-44f9-9cfd-9dc482d6eae7", "asset": "github/github-insight/traffic", "readings": {"count": 20}}
+{"timestamp": "2018-08-29 00:00:00", "key": "7c5d0e01-cacd-4f7c-aa0e-70f32093fd99", "asset": "github/github-insight/traffic", "readings": {"count": 19}}
+{"timestamp": "2018-08-30 00:00:00", "key": "a20ae0e6-d3d4-4296-8731-1b88e84e4ec3", "asset": "github/github-insight/traffic", "readings": {"count": 16}}
+{"timestamp": "2018-08-31 00:00:00", "key": "25b4dbe2-747a-4df7-a982-e4986e57292e", "asset": "github/github-insight/traffic", "readings": {"count": 13}}
+{"timestamp": "2018-09-01 00:00:00", "key": "0ddb627b-38aa-4b70-b0ef-f0ad381dfc82", "asset": "github/github-insight/traffic", "readings": {"count": 6}}
+{"timestamp": "2018-09-02 00:00:00", "key": "6b6af291-b125-4b23-b149-cae6dfb04d9c", "asset": "github/github-insight/traffic", "readings": {"count": 9}}
+{"timestamp": "2018-09-03 00:00:00", "key": "ea681f67-e3b6-46cd-96fc-f16affb54b8e", "asset": "github/github-insight/traffic", "readings": {"count": 20}}
+{"timestamp": "2018-09-04 00:00:00", "key": "52cd9347-d626-4053-90af-0f8463a2046d", "asset": "github/github-insight/traffic", "readings": {"count": 24}}
+{"timestamp": "2018-09-05 00:00:00", "key": "7d99dfeb-3b08-4cdc-b7f7-8fd345e954a4", "asset": "github/github-insight/traffic", "readings": {"count": 15}}
+{"timestamp": "2018-09-05", "key": "c5bd8a5c-d64d-47cb-80d5-11f919335e60", "asset": "github/github-insight/commits", "readings": {"count": 19}}
+{"timestamp": "2018-09-04", "key": "b7961a2c-edae-48bf-a989-9393b864384e", "asset": "github/github-insight/commits", "readings": {"count": 11}}
+{"timestamp": "2018-08-23T00:00:00Z", "key": "aab3a708-83d1-40ef-a463-b34bf2bf2c43", "asset": "github/github-insight/clones", "readings": {"count": 10}}
+{"timestamp": "2018-08-24T00:00:00Z", "key": "e5ed22b4-e198-40a5-998a-55015dfe624c", "asset": "github/github-insight/clones", "readings": {"count": 9}}
+{"timestamp": "2018-08-25T00:00:00Z", "key": "9d100852-85d9-48a5-9d92-1da00234b0e2", "asset": "github/github-insight/clones", "readings": {"count": 5}}
+{"timestamp": "2018-08-26T00:00:00Z", "key": "bea95b4c-06f9-40de-a49e-122dba5225ae", "asset": "github/github-insight/clones", "readings": {"count": 5}}
+{"timestamp": "2018-08-27T00:00:00Z", "key": "4527ca88-c327-4840-8e76-b38963a6f34b", "asset": "github/github-insight/clones", "readings": {"count": 10}}
+{"timestamp": "2018-08-28T00:00:00Z", "key": "e277aacc-c413-4ace-97cb-08c749b800f8", "asset": "github/github-insight/clones", "readings": {"count": 6}}
+{"timestamp": "2018-08-29T00:00:00Z", "key": "747e9a8c-c8aa-46a6-97db-d25f8ae765fe", "asset": "github/github-insight/clones", "readings": {"count": 7}}
+{"timestamp": "2018-08-30T00:00:00Z", "key": "517c446d-c7b2-4414-847e-4f805d3044d9", "asset": "github/github-insight/clones", "readings": {"count": 6}}
+{"timestamp": "2018-08-31T00:00:00Z", "key": "897ea82b-eff0-447b-8760-826f592b80fc", "asset": "github/github-insight/clones", "readings": {"count": 5}}
+{"timestamp": "2018-09-01T00:00:00Z", "key": "d346afb3-16ae-473f-9d87-03c53967ed5b", "asset": "github/github-insight/clones", "readings": {"count": 5}}
+{"timestamp": "2018-09-02T00:00:00Z", "key": "31d880b7-2efa-416c-beee-c6f9d317d91e", "asset": "github/github-insight/clones", "readings": {"count": 4}}
+{"timestamp": "2018-09-03T00:00:00Z", "key": "5c20c462-4431-4d53-aff1-858a225cddf6", "asset": "github/github-insight/clones", "readings": {"count": 6}}
+{"timestamp": "2018-09-04T00:00:00Z", "key": "7c2cec39-9b45-4056-86db-e761802273e1", "asset": "github/github-insight/clones", "readings": {"count": 7}}
+{"timestamp": "2018-09-05T00:00:00Z", "key": "c8573a95-bff4-4db0-b1f6-f586f5796349", "asset": "github/github-insight/clones", "readings": {"count": 5}}
+{"timestamp": "2018-09-05", "key": "97ca2db8-9793-4453-a054-ace5c8f69798", "asset": "github/github-insight/referrerals/github.com", "readings": {"count": 32}}
+{"timestamp": "2018-09-05", "key": "c463483b-3aff-4473-b01d-e870b6bb899a", "asset": "github/github-insight/referrerals/Google", "readings": {"count": 18}}
+{"timestamp": "2018-09-05", "key": "5ca3eb45-7fc0-479e-bcb5-9658e922340f", "asset": "github/github-insight/referrerals/DuckDuckGo", "readings": {"count": 1}}
+{"timestamp": "2018-09-05", "key": "62e1c1ec-35c2-409a-b169-e22e840bcda9", "asset": "github/github-insight/referrerals/Bing", "readings": {"count": 1}}
