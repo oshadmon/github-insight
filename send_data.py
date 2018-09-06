@@ -84,61 +84,9 @@ class SendData:
       """ 
       self.cur(open(tables_file, 'r').read())
 
-   def insert_traffic(self): 
-      """
-      insert into github_traffic2 table
-      """
-      inst_stmt="INSERT INTO github_traffic2(row_id, timestamp, repo, today) VALUES ('%s', DATE('%s'), '%s', %s);"
-      updt_stmt="UPDATE github_traffic2 SET total=(SELECT SUM(today) FROM github_traffic2 WHERE repo='%s' AND timestamp<='%s') WHERE repo='%s' AND timestamp='%s';"
-      for obj in self.data['traffic']:
-         row_id=obj['key']
-         timestamp=obj['timestamp']
-         repo=obj['asset'].split('/')[1]
-         traffic=obj['readings']['traffic']
-         if self.check_row('github_traffic2', timestamp, repo) == 0:# check if already exists - if not: 
-            self.cur.execute(inst_stmt % (row_id, timestamp, repo, traffic)) # INSERT 
-            self.cur.execute('commit;') 
-            self.cur.execute(updt_stmt % (repo, timestamp, repo, timestamp))
-            self.cur.execute('commit;') 
- 
-   def insert_clones(self):
-      """
-      insert into github_clones2 table 
-      """
-      inst_stmt="INSERT INTO github_clones2(row_id, timestamp, repo, today) VALUES ('%s', DATE('%s'), '%s', %s);"
-      updt_stmt="UPDATE github_clones2 SET total=(SELECT SUM(today) FROM github_clones2 WHERE repo='%s' AND timestamp<='%s') WHERE repo='%s' AND timestamp='%s';"
-      for obj in self.data['clones']:
-         row_id=obj['key'] 
-         timestamp=obj['timestamp']
-         repo=obj['asset'].split('/')[1]
-         clones=obj['readings']['clones']
-
-         if self.check_row('github_clones2', timestamp, repo) == 0: 
-            self.cur.execute(inst_stmt % (row_id, timestamp, repo, clones)) 
-            self.cur.execute('commit;') 
-            self.cur.execute(updt_stmt % (repo, timestamp, repo, timestamp))
-            self.cur.execute('commit;')
-
-   def insert_commits(self): 
-      """
-      insert into github_commits2 table
-      """
-      inst_stmt="INSERT INTO github_commits2(row_id, timestamp, repo, today) VALUES ('%s', DATE('%s'), '%s', %s);"
-      updt_stmt="UPDATE github_commits2 SET total=(SELECT SUM(today) FROM github_commits2 WHERE repo='%s' AND timestamp<='%s') WHERE repo='%s' AND timestamp<='%s'"
-      for obj in self.data['commits']:
-         row_id=obj['key']
-         timestamp=obj['timestamp']
-         repo=obj['asset'].split('/')[1]
-         commits=obj['readings']['commits']
-         if self.check_row('github_commits2', timestamp, repo) == 0:
-            self.cur.execute(inst_stmt % (row_id, timestamp, repo, commits))
-            self.cur.execute('commit;')
-            self.cur.execute(updt_stmt % (repo, timestamp, repo, timestamp))
-            self.cur.execute('commit;') 
-
    def non_referrals_insert(self, insert:str='github'): 
       """
-      Execute insert stmt
+      For non-referral cases get data data and store store in file
       :param:
          insert:str - Into what table to insert the data
       :args:
@@ -218,9 +166,6 @@ def main():
    sd.non_referrals_insert('traffic')
    sd.non_referrals_insert('clones')
    sd.non_referrals_insert('commits')
-   #sd.insert_traffic() 
-   #sd.insert_clones() 
-   #sd.insert_commits() 
    sd.insert_referrals() 
 
 if __name__ == '__main__': 
