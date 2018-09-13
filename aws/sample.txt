@@ -1,0 +1,2 @@
+b'94b0d7bdce49506054db00c7ed077b7600249ec3841c7afff89cdc3f06544e61 demo [26/Jan/2018:14:58:44 +0000] 88.97.58.233 94b0d7bdce49506054db00c7ed077b7600249ec3841c7afff89cdc3f06544e61 394718876F1C11F2 REST.GET.ENCRYPTION - "GET /demo?encryption= HTTP/1.1" 404 ServerSideEncryptionConfigurationNotFoundError 350 - 19 - "-" "S3Console/0.4, aws-internal/3" -\n'
+
