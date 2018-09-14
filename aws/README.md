@@ -40,7 +40,7 @@ positional arguments:
 optional arguments:
   -h, --help  show this help message and exit
 
-ubuntu@ori-foglamp:~/github-insight$ python3 aws/aws_insight.py ubuntu:foglamp 127.0.0.1:5432 test
+ubuntu@ori-foglamp:~/github-insight$ python3 aws/aws_insight.py ubuntu:foglamp 127.0.0.1:5432 test test
 ``` 
 ```sample.txt``` - Sample file with how files in AWS S3 bucket currently need to look to be read
 ```
