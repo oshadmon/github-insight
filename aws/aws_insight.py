@@ -8,7 +8,7 @@ import re
 class AWSData: 
    def __init__(self, bucket_name:str='demo', up:str='user:passwd', hp:str='127.0.0.1:5432', dbname:str='test'): 
       """
-      Use boto3 to retrieve data from AWS & send it to database
+      Based on information from AWS store the IP address & timestamp in aws_ip_list if value set DNE 
       :args: 
          up:str          - database username/password
          hp:str          - database host/port 
@@ -45,7 +45,7 @@ class AWSData:
       :return: 
          1 if row exist otherwise 0
       """
-      stmt="SELECT COUNT(*) FROM aws_downloads WHERE ip='%s' AND create_date='%s'" % (ip, date)
+      stmt="SELECT COUNT(*) FROM aws_ip_list WHERE ip='%s' AND create_date='%s'" % (ip, date)
       self.cur.execute(stmt)
       return self.cur.fetchall()[0][0]
 
@@ -56,7 +56,7 @@ class AWSData:
          ip:str - IP of user 
          date:str - date IP accessed us 
       """ 
-      stmt="INSERT INTO aws_downloads VALUES('%s', '%s');" 
+      stmt="INSERT INTO aws_ip_list VALUES('%s', '%s');" 
       self.cur.execute(stmt % (date, ip))
       self.cur.execute('commit;')
 
