@@ -100,7 +100,7 @@ class SendData:
             'data': self.data['traffic']
          },
          'clones':{
-            'table_name': 'github_traffic',
+            'table_name': 'github_clones',
             'data': self.data['clones']
          },
          'commits':{
@@ -108,16 +108,18 @@ class SendData:
             'data': self.data['commits']
          }
       }
-      for obj in objs[insert]['data']:
-         row_id=obj['key']
-         timestamp=obj['timestamp']
-         repo=obj['asset'].split('/')[1]
-         count=obj['readings']['count']
-         if self.check_row(objs[insert]['table_name'], timestamp, repo) == 0:
-            self.cur.execute(inst_stmt % (objs[insert]['table_name'], row_id, timestamp, repo, count))
-            self.cur.execute('commit;')
-            self.cur.execute(updt_stmt % (objs[insert]['table_name'], objs[insert]['table_name'], repo, timestamp, repo, timestamp)) 
-            self.cur.execute('commit;') 
+      for key in list(objs.keys()):  
+          table_name=objs[key]['table_name']
+          for i in range(len(objs[key]['data'])):
+             row_id    = objs[key]['data'][i]['key']
+             timestamp = objs[key]['data'][i]['timestamp']
+             repo      = objs[key]['data'][i]['asset'].split('/')[1]
+             today     = objs[key]['data'][i]['readings']['count']
+             if self.check_row(table_name, timestamp, repo) == 0: 
+                self.cur.execute(inst_stmt % (table_name, row_id, timestamp, repo, today))
+                self.cur.execute('commit;')
+                self.cur.execute(updt_stmt % (table_name, table_name, repo , timestamp, repo, timestamp))
+                self.cur.execute('commit;')   
 
    def insert_referrals(self):
       """
